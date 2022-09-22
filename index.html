@@ -44,17 +44,15 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size:medium;
         }
-
-        .cadre{
-            background-image: url("../cadre.png"),
-                  url("../cadre.png");
-            height: 40px;
-            width: 40px;
-        }
         
         .button{
+            width: 400px;
+            height: 130px;
             text-align: center;
             margin: 10px 0px;
+            background: url('mail2/cadre.png'), #aaa; 
+            background-repeat:no-repeat;
+            background-size: 400px 200px;
         }
 
         .button img{
@@ -69,6 +67,7 @@
             font-family: Arial, Helvetica, sans-serif;
             padding: 8px;
             font-size: larger;
+            text-align: left;
         }
 
         .button .comment{
@@ -85,14 +84,54 @@
             margin-left: 10px;
         }
 
-        .corp{
-            width: 700px;
+        .trait_dessous{
+            border-left: 2px solid #00192A; 
+            height: 60px; 
+            display: inline-block;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        
+        .savoir-plus p{
+            color: #fffefe;
+            background: #00192A;
+            width: 100px;
+            height: 50px;
+        }
+
+        .button-savoir{
+            width: 150px;
+            height: 150px;
+            opacity: 1;
+            /* IE8 et antérieurs */
+            filter: alpha(opacity=100);
+            /* Déclenche "hasLayout" dans IE 7 et antérieurs */
+            zoom: 1;
         }
 
         @media screen and (max-width: 700px) {
             .medias{
                 width: 100% !important;
             }
+        }
+
+        .button-savoir:hover{
+            opacity: 0.6;
+            filter: alpha(opacity=50);
+            zoom: 1;
+        }
+
+        .reseaux{
+            border:0; 
+            height: 50px; 
+            line-height: 100%; 
+            outline: none; 
+            text-decoration: none;
+        }
+
+        .icone{
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
     </style>
@@ -112,46 +151,30 @@
                             </td>
                         </tr>
                     </table>
-                </td>
-            </tr>
 
  <!--Lien miroir-->
-            <tr>
-                <td align="center">
+               
                     <table class="lien-miroir medias"  width="700px" cellspacing="0" cellpadding="0" border="0" style="max-width:700px">
                         <tr>
                             <td align="center">
                                 Si vous ne visualisez pas correctement cet email :
                                 <a href="file:///C:/Users/nathalie.breton/Desktop/template-email2/index.html"target="_blank"><u>Suivez ce lien !</u></a>
-                                <br>Attention : Veuillez ne pas répondre à cet email car les messages reçus à cette adresse ne sont pas lus
                             </td>
                         </tr>
                     </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="font-size:30px;line-height:30px" height="30"></td>
-            </tr>
+            
 <!--Logo Mericq-->
-            <tr>
-                 <td align="center">
-                    <table class="logo-medias"  width="700px" cellspacing="0" cellpadding="0" border="0" style="max-width:700px">
+            
+                    <table  width="700px" cellspacing="0" cellpadding="0" border="0" style="max-width:700px">
                         <tr >
                             <td align="center">
-                                <img class="logo-medias" src="https://mericq.com/static/site_mericq/img/groupe-mericq.png" alt="Logo Mericq" style="display:block" data-bit="iit" width="400">
+                                <img src="https://mericq.com/static/site_mericq/img/groupe-mericq.png" alt="Logo Mericq" style="display:block; margin: 20px;" data-bit="iit" width="400">
                             </td>
                         </tr>
                     </table>
-                 </td>
-            </tr>
-            <tr>
-                <td style="font-size:30px;line-height:30px" height="30"></td>
-            </tr>
 
 <!--La marée-->            
-            <tr>
-                 <td align="center">
+            
                         <table class="marée medias"  width="700px" cellspacing="0" cellpadding="0" border="0" style="max-width:700px">
                             <tr>
                                 <td>
@@ -159,12 +182,9 @@
                                 </td>
                             </tr>
                         </table>
-                 </td>
-            </tr>
-
+                 
 <!--texte droit client-->            
-            <tr>
-                <td align="center">
+           
                     <table class="droit medias"  width="700px" cellspacing="0" cellpadding="0" border="0" style="max-width:700px">
                         <tr>
                             <td align="center">
@@ -173,164 +193,288 @@
                             </td>
                         </tr>
                     </table>
-                </td>
-            </tr>
-
+                
 <!--6 boutons-->
-            <tr>
-                <td align="center">
+         
                     <table class="corp medias"  width="700px" cellspacing="0" cellpadding="0" border="0" style="max-width:700px">
                         <tr>
                             <td align="center" >
 <!--suggestion-->                                
-                                <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
-                                    <table class="button">
-                                        <td style="background-image:url('mail2/cadre.png');background-repeat:no-repeat;">
-                                        <tr>
-                                            <td rowspan="3">
-                                                    <img src="mail2/chrono1.png" alt="img-chronomètre">
-                                            </td>
-                                            <td class="title">
-                                           <b>SUGGESTION DE PLATS DU JOUR </b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="trait_dessus"></div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="comment" align="left">
-                                                <b>Profitez d'opportunités en quantités <br>limités.</b>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
+                    <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank" >
+                        <table class="button" >
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">
+                                            <img src="mail2/chrono1.png" alt="img-chronomètre">
+                                    </td>
+                                    <td class="title">
+                                        <b>SUGGESTION DE PLATS DU JOUR </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="trait_dessus"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="comment" align="left">
+                                        <b>Profitez d'opportunités en quantités <br>limités.</b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </a>
 <!--fil-->
-                                <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
-                                    <table class="button">
-                                        <tr>
-                                            <td rowspan="3">
-                                                    <img src="mail2/calendrier.png" alt="img-calendrier">
-                                            </td>
-                                            <td class="title">
-                                           <b>LE FIL D'ACTUALITE </b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="trait_dessus"></div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="comment" align="left">
-                                                <b>Nos arrivages en photos : <br>sélectionnez vos coups de coeur.</b>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
+                    <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
+                        <table class="button">
+                            <tr>
+                                <td rowspan="3">
+                                        <img src="mail2/calendrier.png" alt="img-calendrier">
+                                </td>
+                                <td class="title">
+                            <b>LE FIL D'ACTUALITE </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="trait_dessus"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment" align="left">
+                                    <b>Nos arrivages en photos : <br>sélectionnez vos coups de coeur.</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
 <!--24h-->
-                               <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
-                                    <table class="button">
-                                        <tr>
-                                            <td rowspan="3">
-                                                    <img src="mail2/panier.png" alt="img-panier">
-                                            </td>
-                                            <td class="title">
-                                           <b>24H/24 & 7J/7 </b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="trait_dessus"></div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="comment" align="left">
-                                                <b>Commandez selon vos besoins  <br>et la disponibilité des produits.</b>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
+                    <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
+                        <table class="button">
+                            <tr>
+                                <td rowspan="3">
+                                        <img src="mail2/panier.png" alt="img-panier">
+                                </td>
+                                <td class="title">
+                            <b>24H/24 & 7J/7 </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="trait_dessus"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment" align="left">
+                                    <b>Commandez selon vos besoins  <br>et la disponibilité des produits.</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
 <!--favoris-->
-                                <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
-                                    <table class="button">
-                                        <tr>
-                                            <td rowspan="3">
-                                                    <img src="mail2/etoile.png" alt="img-étoile">
-                                            </td>
-                                            <td class="title">
-                                        <b>VOS FAVORIS </b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="trait_dessus"></div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="comment" align="left">
-                                                <b>Gagnez du temps en retrouvant vos produits <br>favoris en quelques clics.</b>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
+                    <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
+                        <table class="button">
+                            <tr>
+                                <td rowspan="3">
+                                        <img src="mail2/etoile.png" alt="img-étoile">
+                                </td>
+                                <td class="title">
+                            <b>VOS FAVORIS </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="trait_dessus"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment" align="left">
+                                    <b>Gagnez du temps en retrouvant vos produits <br>favoris en quelques clics.</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
 <!--exceptionnel-->                                
-                                <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
-                                    <table class="button">
-                                        <tr>
-                                            <td rowspan="3">
-                                                    <img src="mail2/couronne.png" alt="img-couronne">
-                                            </td>
-                                            <td class="title">
-                                           <b>L'EXCEPTIONNEL</b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="trait_dessus"></div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="comment" align="left">
-                                                <b>Sublimez votre carte, commandez <br>des produits d'exception.</b>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
+                    <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
+                        <table class="button">
+                            <tr>
+                                <td rowspan="3">
+                                        <img src="mail2/couronne.png" alt="img-couronne">
+                                </td>
+                                <td class="title">
+                            <b>L'EXCEPTIONNEL</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="trait_dessus"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment" align="left">
+                                    <b>Sublimez votre carte, commandez <br>des produits d'exception.</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
 <!--plateaux-->                                
-                                <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
-                                    <table class="button">
-                                        <tr>
-                                            <td rowspan="3">
-                                                    <img src="mail2/homard.png" alt="img-homard">
-                                            </td>
-                                            <td class="title">
-                                           <b>VOS PLATEAUX DE FRUITS DE MER </b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="trait_dessus"></div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="comment" align="left">
-                                                <b>Maitrisez vos ratios et facilitez le calcul <br>de vos besoins pour vos plateaux <br> de fruits de mer.</b>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-<!--fin bouton-->                                
-                                </table>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                    <a href="https://new.mericq.com/connexion?returnUrl=%2Faccueil" target="_blank">
+                        <table class="button">
+                            <tr>
+                                <td rowspan="3">
+                                        <img src="mail2/homard.png" alt="img-homard">
+                                </td>
+                                <td class="title">
+                            <b>VOS PLATEAUX DE FRUITS DE MER </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="trait_dessus"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="comment" align="left">
+                                    <b>Maitrisez vos ratios et facilitez le calcul <br>de vos besoins pour vos plateaux <br> de fruits de mer.</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+<!--fin bouton-->
+
                 </td>
             </tr>
-        </tbody>
+            </table>
+        </td>
+        </tr>
+    </tbody>
     </table>
 </body>
 </html>
+
 <!--FIN DE PAGE-->
+<!--DEBUT DE PAGE-->
+
+<table class="lien-miroir medias" style="max-width:700px" width="700px" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td align="center">
+                <p>
+                <b>Ensemble, on parlera de tout ce qui fait de la marée une filière
+                    <br>aussi bien passionnante qu’innovante.</b>
+                </p>   
+                <img class="banniere" src="mail2/savoir-plus.png" alt="avez-vous envie d'en savoir plus?" align="left">
+
+<!--Savoir Plus-->
+            <div class="savoir-plus" style="background-color: rgb(251, 229, 214)">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <b>Je clique sur le sujet <br>qui m’intéresse<br>pour le découvrir.</b>
+                                
+                            </td>
+                            <td style="background: url('mail2/crevette.png'), #aaa;" class="button-savoir" align="center">
+                                <a target="_blank" href="https://mericq.com/fr/">
+                                    <p>Les PDM toute l’année ></p>
+                                </a>
+                            </td>
+                            <td style="background: url('mail2/huitres.png'), #aaa;" class="button-savoir" align="center">
+                                <a target="_blank" href="https://mericq.com/fr/">
+                                    <p>La saisonnalité des produits ></p>
+                                </a>
+                            </td>
+                         </tr>
+                        <tr>
+                            <td style="background: url('mail2/expertise.png'), #aaa;" class="button-savoir" align="center">
+                                <a target="_blank" href="https://mericq.com/fr/">
+                                    <p>L’expertise métier ></p>
+                                </a>
+                            </td>
+                            <td style="background: url('mail2/veille qualité.png'), #aaa;" class="button-savoir" align="center">
+                                <a target="_blank" href="https://mericq.com/fr/"><p>Veille qualité ></p>
+                                </a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url('mail2/veille environnement.png'), #aaa;" class="button-savoir" align="center">
+                            <a target="_blank" href="https://mericq.com/fr/"><p>Veille environnement ></p>
+                            </a>
+                        </td>
+                        <td style="background: url('mail2/veille rh.png'), #aaa;" class="button-savoir" align="center">
+                            <a target="_blank" href="https://mericq.com/fr/"><p>Veille RH ></p>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+<!--Logo Lorem -->
+            <table style="border-spacing:50px; color:#00192A ; font-family: Arial, Helvetica, sans-serif; font-size:x-large; text-align: center;" >
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="mail2/EQUIPE.png" alt="img-equipe"> <p><b>Lorem ipsum <br>dolor sit amet</b></p>
+                        </td>
+                        <td>
+                            <img src="mail2/caddie.png" alt="img-caddie"> <p><b>Lorem ipsum <br>dolor sit amet</b></p>
+                        </td>
+                        <td>
+                            <img src="mail2/fusée.png" alt="img-fusée"> <p><b>Lorem ipsum <br>dolor sit amet</b></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+                        <div class="maree-avance" style="color:#00192A ; font-family: Arial, Helvetica, sans-serif; font-size:x-large;">
+                            <p><b>Une marée d’avance.</b></p>
+                        </div>
+<!--Lien réseau sociaux -->
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="icone">
+                                            <a target="_blank" href="https://fr.linkedin.com/company/mericq">
+                                                <img class="reseaux" src="mail2/linkedin.png" alt="lien vers le LinkedIn Mericq">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <div class="icone">
+                                            <a target="_blank" href="https://fr-fr.facebook.com/groupemericq/">
+                                                <img class="reseaux" src="mail2/facebook-blue.png" alt="lien vers le facebook Mericq">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <div class="icone">
+                                            <a target="_blank" href=" ">
+                                                <img class="reseaux" src="mail2/instagram.jpg" alt="lien vers le instagram Mericq">
+                                            </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="trait_dessous"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <div class="site" style="color:#00192A ; font-family: Arial, Helvetica, sans-serif; font-size:medium;">
+                           <b>Visitez <a href="https://mericq.com"><u>mericq.com</u></a></b>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+<!-- pied de page -->
+
+            </td>
+        </tr>
+    </tbody>
+</table>
