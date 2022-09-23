@@ -47,12 +47,13 @@
         
         .button{
             width: 400px;
-            height: 130px;
+            height: 165px;
             text-align: center;
             margin: 10px 0px;
-            background: url('mail2/cadre.png'), #aaa; 
+            background: url('mail2/cadre.png'); 
             background-repeat:no-repeat;
-            background-size: 400px 200px;
+            background-size: 100% 165px;
+            padding: 10px;
         }
 
         .button img{
@@ -92,11 +93,12 @@
             margin-right: 40px;
         }
         
-        .savoir-plus p{
+        .savoir-plus .carre{
             color: #fffefe;
             background: #00192A;
-            width: 100px;
+            width: 122px;
             height: 50px;
+            padding: 10px;
         }
 
         .button-savoir{
@@ -113,9 +115,23 @@
             .medias{
                 width: 100% !important;
             }
-        }
+            .responsive-table tr{
+                display: block;
+        
+            }
 
-        .button-savoir:hover{
+            .responsive-table td {
+                display: block;
+               
+            }
+        }
+/*
+        .reponsive-table td:before{
+            content : attr(data-label);
+            float: left;
+        }
+*/
+        .button-savoir a:hover{
             opacity: 0.6;
             filter: alpha(opacity=50);
             zoom: 1;
@@ -381,53 +397,99 @@
                 <b>Ensemble, on parlera de tout ce qui fait de la marée une filière
                     <br>aussi bien passionnante qu’innovante.</b>
                 </p>   
-                <img class="banniere" src="mail2/savoir-plus.png" alt="avez-vous envie d'en savoir plus?" align="left">
-
+                
 <!--Savoir Plus-->
-            <div class="savoir-plus" style="background-color: rgb(251, 229, 214)">
-                <table>
-                    <tbody>
+                <div style="text-align: left;">
+                    <img  src="mail2/savoir-plus.png" alt="avez-vous envie d'en savoir plus?" >
+                </div>
+
+                <div class="savoir-plus" style="background-color: rgb(251, 229, 214); text-align: left;">
+                    <img  src="mail2/savoir.png" alt="avez-vous envie d'en savoir plus?">
+                    
+                    <table class="responsive-table" cellspacing="10px">
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">
+                                    <div class="sujet" align="left" style=" color:#00192A ; font-family: Arial, Helvetica, sans-serif; font-size:small; text-align:center; margin-bottom: 320px; margin-right: 40px;">
+                                    <b>Je clique sur le sujet <br>qui m’intéresse<br>pour le découvrir.</b>
+                                    </div>
+                                </td>
+                                <td style="background: url('mail2/crevette.png'), #aaa;" class="button-savoir" align="center"> 
+                                    <a target="_blank" href="https://mericq.com/fr/">
+                                        <table class="carre">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center">Les PDM toute l’année ></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </a>
+                                </td>
+                                <td style="background: url('mail2/huitres.png'), #aaa;" class="button-savoir" align="center">
+                                    <a target="_blank" href="https://mericq.com/fr/">
+                                        <table class="carre">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center">
+                                                        La saisonnalité des produits >
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: url('mail2/expertise.png'), #aaa;" class="button-savoir" align="center">
+                                    <a target="_blank" href="https://mericq.com/fr/">
+                                        <table class="carre">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center">L’expertise métier ></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </a>
+                                </td>
+                                <td style="background: url('mail2/veille qualité.png'), #aaa;" class="button-savoir" align="center">
+                                    <a target="_blank" href="https://mericq.com/fr/">
+                                        <table class="carre">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center">Veille qualité ></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </a>
+                                </td>
+                        </tr>
                         <tr>
-                            <td rowspan="3">
-                                <div class="sujet" style=" color:#00192A ; font-family: Arial, Helvetica, sans-serif; font-size:small; text-align:center; margin-bottom: 320px; margin-right: 10px;">
-                                <b>Je clique sur le sujet <br>qui m’intéresse<br>pour le découvrir.</b>
-                                </div>
-                            </td>
-                            <td style="background: url('mail2/crevette.png'), #aaa;" class="button-savoir" align="center">
+                            <td style="background: url('mail2/veille environnement.png'), #aaa;" class="button-savoir" align="center">
                                 <a target="_blank" href="https://mericq.com/fr/">
-                                    <p>Les PDM toute l’année ></p>
+                                    <table class="carre">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">Veille environnement ></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </a>
                             </td>
-                            <td style="background: url('mail2/huitres.png'), #aaa;" class="button-savoir" align="center">
+                            <td style="background: url('mail2/veille rh.png'), #aaa;" class="button-savoir" align="center">
                                 <a target="_blank" href="https://mericq.com/fr/">
-                                    <p>La saisonnalité des produits ></p>
+                                    <table class="carre">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">Veille RH ></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </a>
                             </td>
-                         </tr>
-                        <tr>
-                            <td style="background: url('mail2/expertise.png'), #aaa;" class="button-savoir" align="center">
-                                <a target="_blank" href="https://mericq.com/fr/">
-                                    <p>L’expertise métier ></p>
-                                </a>
-                            </td>
-                            <td style="background: url('mail2/veille qualité.png'), #aaa;" class="button-savoir" align="center">
-                                <a target="_blank" href="https://mericq.com/fr/"><p>Veille qualité ></p>
-                                </a>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td style="background: url('mail2/veille environnement.png'), #aaa;" class="button-savoir" align="center">
-                            <a target="_blank" href="https://mericq.com/fr/"><p>Veille environnement ></p>
-                            </a>
-                        </td>
-                        <td style="background: url('mail2/veille rh.png'), #aaa;" class="button-savoir" align="center">
-                            <a target="_blank" href="https://mericq.com/fr/"><p>Veille RH ></p>
-                            </a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
 
 <!--Logo Lorem -->
             <table style="border-spacing:50px; color:#00192A ; font-family: Arial, Helvetica, sans-serif; font-size:x-large; text-align: center;" >
